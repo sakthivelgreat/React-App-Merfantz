@@ -1,0 +1,92 @@
+.profileDetails {
+    position: relative;
+    font-family: Arial, sans-serif;
+  }
+  
+  .profile-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 1px 2px 16px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    padding: 10px 15px;
+    z-index: 1000;
+  }
+  
+  .dropdown-section {
+    margin-bottom: 15px;
+  }
+  
+  .balance-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .balance-text p {
+    margin: 0;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .balance-text span {
+    color: #666;
+  }
+  
+  .buy-balance {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .buy-balance:hover {
+    background-color: #0056b3;
+  }
+  
+  .toggle-test-mode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .toggle-test-mode input {
+    accent-color: #007bff;
+    cursor: pointer;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .link-item {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .link-item:hover {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+  }
+  

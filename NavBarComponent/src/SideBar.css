@@ -1,0 +1,74 @@
+
+.Main-sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+nav {
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column; 
+  justify-items: flex-start ;
+  justify-content: space-between; 
+  width: fit-content;
+  height: 100vh;
+  border: none;
+}
+  .Card{
+    position: relative;
+    padding: 0;
+    width: fit-content;
+  }
+  nav ul {
+    position: relative;
+    bottom: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding: 30px 10px;
+  }
+  nav ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    flex-direction: column;
+    transition: background-color 0.5s;
+  }
+  nav ul li a div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .div-svg{
+    padding: 2px 2px;
+    border-radius: 5px;
+
+  }
+  li a:hover .div-svg{
+    background-color: #E5E8FF;  
+   
+  }
+
+
+  li a div p{
+    text-align: center;
+    font-size: 11px;
+  }
+  nav ul li a:hover {
+    
+    border-radius: 8px;
+  }
+  
+
+  
+  nav ul li a svg {
+    color: #667085; /* Icon color */
+  }
+  
+  
+  
+  
