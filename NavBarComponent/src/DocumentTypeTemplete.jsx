@@ -4,9 +4,9 @@ import DecumentTypesCards from './DecumentTypesCards';
 
 export const DocumentTypeTemplete = () => {
   return (
-    <div style={{ display:'flex', flexDirection:'column',alignContent:'center',justifyContent:'center'}}>
+    <div style={{ display:'flex', flexDirection:'column',alignContent:'center',justifyContent:'center'  }}>
         <div className='main-Decument'>
-        <div className='main-navbar'  >
+        <div className='main-navbar' style={{  }} >
           <div style={{ padding:'5px 20 px' }}>
             <h1 style={{ padding: '0px 20px' ,color: 'black', fontFamily: 'system-ui' }}>Document type</h1>
           </div>
@@ -24,8 +24,11 @@ export const DocumentTypeTemplete = () => {
             </button>
           </div>       
         </div>
-        <div >
-          <DecumentTypesCards/>
+        <div style={{display:'flex',flexWrap:"wrap", gap:'10px'}}>
+          <DecumentTypesCards Heading={"Debit settlement"} Uploaded={"1"} Review={"0"} Approved={"1"}/>
+          <DecumentTypesCards Heading={"Debit settlement"} Uploaded={"1"} Review={"0"} Approved={"1"}/>
+          <DecumentTypesCards Heading={"Debit settlement"} Uploaded={"1"} Review={"0"} Approved={"1"}/>
+          <DecumentTypesCards Heading={"Debit settlement"} Uploaded={"1"} Review={"0"} Approved={"1"}/>
         </div>
         </div>
     </div>
