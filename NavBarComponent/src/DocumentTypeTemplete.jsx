@@ -24,11 +24,11 @@ export const DocumentTypeTemplete = () => {
             </button>
           </div>       
         </div>
-        <div style={{display:'flex',flexWrap:"wrap", gap:'10px'}}>
+        <div style={{display:'flex',flexWrap:"wrap", gap:'20px'}}>
           <DecumentTypesCards Heading={"Debit settlement"} Uploaded={"1"} Review={"0"} Approved={"1"}/>
-          <DecumentTypesCards Heading={"Debit settlement"} Uploaded={"1"} Review={"0"} Approved={"1"}/>
-          <DecumentTypesCards Heading={"Debit settlement"} Uploaded={"1"} Review={"0"} Approved={"1"}/>
-          <DecumentTypesCards Heading={"Debit settlement"} Uploaded={"1"} Review={"0"} Approved={"1"}/>
+          <DecumentTypesCards Heading={"Rent Roll"} Uploaded={"0"} Review={"0"} Approved={"0"}/>
+          <DecumentTypesCards Heading={"Text Receipt"} Uploaded={"1"} Review={"0"} Approved={"1"}/>
+          <DecumentTypesCards Heading={"Document 0"} Uploaded={"0"} Review={"0"} Approved={"0"}/>
         </div>
         </div>
     </div>

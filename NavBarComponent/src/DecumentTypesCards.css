@@ -22,6 +22,10 @@
   .document-button svg {
     vertical-align: middle;
   }
+  span{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+  }
   
   /* Footer buttons */
   .card-footer {
@@ -48,5 +52,12 @@
   .card-footer svg {
     color: currentColor;
     vertical-align: middle;
+  }
+  .Card{
+    border: 1px solid rgb(78, 222, 174);
+  }
+  .Card:hover{
+    border: 1.25px solid #156acb;
+    box-shadow: 0 16px 24px rgba(74, 144, 226, 0.3);
   }
   

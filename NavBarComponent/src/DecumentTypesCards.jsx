@@ -3,15 +3,15 @@ import './DecumentTypesCards.css'
 
 export const DecumentTypesCards = ({Heading , Uploaded , Review , Approved }) => {
   return (
-    <div style={{ position: 'relative', top: '50px', left: '50px', display: 'flex',flexDirection:'column' ,justifyContent:'space-between', alignContent: 'center', border: '1px solid rgb(78, 222, 174)', width: '400px', height: '200px', borderRadius:'8px' ,padding:'15px' }}>
+    <div className='Card' style={{ position: 'relative', top: '50px', left: '50px', display: 'flex',flexDirection:'column' ,justifyContent:'space-between', alignContent: 'center', width: '400px', height: '200px', borderRadius:'8px' ,padding:'15px' }}>
       <div style={{ display: 'flex', flexDirection: 'column', justifyContent:'center', alignContent: 'center' }}>
         <div style={{ display: 'flex', justifyContent:'space-between', alignContent: 'center' }}>
-          <div><span style={{ color: '#41444D' }}>{Heading}</span></div>
+          <div><span style={{ color: '#41444D', fontFamily: "'Inter', sans-serif", fontSize:'16px' }}>{Heading}</span></div>
           <div>
             <div><svg width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="var(--ds-clr-black)"><path d="M12 12.5a.5.5 0 100-1 .5.5 0 000 1zM12 20.5a.5.5 0 100-1 .5.5 0 000 1zM12 4.5a.5.5 0 100-1 .5.5 0 000 1z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
           </div>
         </div>
-        <div style={{ display:'flex', flexDirection:'column', color:'#6A6C74',alignContent:'center',justifyContent:'center', backgroundColor:'#F7F8FD', borderRadius:'5px',padding:'5px' ,gap:'15px'}}>
+        <div className='seduale' style={{ display:'flex', flexDirection:'column', color:'#6A6C74',alignContent:'center',justifyContent:'center', backgroundColor:'#F7F8FD', borderRadius:'5px',padding:'5px' ,gap:'15px'}}>
           <div style={{ display: 'flex', justifyContent:'space-between', alignItems: 'center'}}>
             <div>
               <span>Uploaded: &nbsp;</span>
