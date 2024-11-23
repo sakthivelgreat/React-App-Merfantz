@@ -1,23 +1,17 @@
- .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 5px;
+ .navbar1 {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
+    padding: 5px;  
+    border-bottom: 1px solid #ddd;
+  }  
   svg{
     padding: 5px 5px;
   }
- 
-
   .navbar-left {
     display: flex;
     align-items: center;
-
   }
   .logo {
     width: 40px;
@@ -56,6 +50,11 @@
   
   button{
     border: none;
+  }
+  .Tooltip-dev{
+    display: flex;
+    gap: 15px;
+   
   }
   .Tooltip-dev button {
     background-color: #FFFFFF;

@@ -4,8 +4,6 @@ import Card from '@mui/material/Card';
 export const SideNavBar = () => {
   return (
   <div className='Main-sidebar'>
-    <Card className='Card'>
-    <nav >
       <ul>
         <li>
           <a href="">
@@ -54,9 +52,6 @@ export const SideNavBar = () => {
           </a>
         </li>
       </ul>
-    </nav>
-
-  </Card>
   </div>
     
   )

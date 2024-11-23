@@ -1,32 +1,39 @@
-import './App.css'
-import DocumentTypeTemplete from './DocumentTypeTemplete'
-import Navbar from './Navbar'
-import ProfileDetails from './profileDetails'
-import SideNavBar from './SideNavBar'
-import { useState } from 'react'
+import DocumentTypeTemplete from './DocumentTypeTemplete';
+import Navbar from './Navbar';
+import ProfileDetails from './profileDetails';
+import SideNavBar from './SideNavBar';
+import { useState } from 'react';
+import './App.css';
+
 
 function App() {
-  
   const [showContent, setShowContent] = useState(false);
 
- 
   const handleDropdownToggleNav = () => {
-    if (showContent === true) {
-      setShowContent(false); 
-    } else {
-      setShowContent(true);   
-    }
-    
+    setShowContent(!showContent);
   };
 
   return (
-    <>
-     <SideNavBar/>
-     <DocumentTypeTemplete/>
-    <Navbar handleDropdownToggleNav = { handleDropdownToggleNav }/>
-    {showContent && <div><ProfileDetails/> </div>}   
-    </>
-  )
+    <div className='Fullpage'>
+        <div >
+          <Navbar handleDropdownToggleNav={handleDropdownToggleNav} />
+        </div>
+      
+      <div className='SideNavbar' style={{ display:'grid',gridTemplateColumns:'auto 1fr'}}>
+        <div className="sidebar">
+          <SideNavBar />
+        </div>
+        <div  className='Main'>
+          {showContent && (
+            <div >
+              <ProfileDetails />
+            </div>
+          )}
+          <DocumentTypeTemplete />
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
