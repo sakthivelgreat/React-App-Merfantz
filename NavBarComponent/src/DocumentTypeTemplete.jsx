@@ -8,7 +8,7 @@ export const DocumentTypeTemplete = () => {
       <div style={{ display:'flex', flexDirection:'column',alignContent:'center',justifyContent:'center'  }}>
         <div className='main-Decument'>
           <div className='main-navbar' >
-            <div style={{ padding:'5px 20 px' }}>
+            <div style={{ padding:'5px 20px'}}>
               <h1 style={{ padding: '0px 20px' ,color: 'black', fontFamily: 'system-ui' }}>Document type</h1>
             </div>
             <div   style={{ display:'flex', justifyContent : 'center',alignItems : 'center' , gap:'20px'}}>

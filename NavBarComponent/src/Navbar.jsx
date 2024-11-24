@@ -1,6 +1,7 @@
 import './Nav.css'; 
 import Card from '@mui/material/Card';
-import Tooltip from '@mui/material/Tooltip';
+// import Tooltip from '@mui/material/Tooltip';
+import { Tooltip } from 'react-tooltip'
 import { useState } from 'react';
 import ProfileApp from './ProfileApp';
 import ProfileDetails from './profileDetails';
@@ -26,9 +27,10 @@ const Navbar = ({ handleDropdownToggleNav }) => {
             </div>
           </Card>
           <div className='Tooltip-dev'>
-          <button> <Tooltip title="What's New" placement="bottom" arrow arrowColor="black" sx={{ bgcolor: 'black', color: 'white', p: 2 }} > <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="blue"> <path d="M14 14V6m0 8l6.102 3.487a.6.6 0 00.898-.52V3.033a.6.6 0 00-.898-.521L14 6m0 8H7a4 4 0 01-4-4v0a4 4 0 014-4h7M7.757 19.3L7 14h4l.677 4.74a1.98 1.98 0 01-3.92.56z" stroke="currentColor"></path> </svg> </Tooltip> </button>
-          <button><Tooltip title="Help" placement="bottom" arrow><svg width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="blue"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9 9c0-3.5 5.5-3.5 5.5 0 0 2.5-2.5 2-2.5 5M12 18.01l.01-.011" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></Tooltip></button>
-          <button><Tooltip title="Knowledge Base" placement="bottom" arrow><svg width="1.5em"  height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="blue"><path d="M5 19.5V5a2 2 0 012-2h11.4a.6.6 0 01.6.6V21M9 7h6M6.5 15H19M6.5 18H19M6.5 21H19" stroke="currentColor" ></path></svg></Tooltip></button>
+          <Tooltip id="my-tooltip"  />
+          <button data-tooltip-id="my-tooltip" data-tooltip-offset="0" data-tooltip-content="Hello to you too!" > <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="blue"> <path d="M14 14V6m0 8l6.102 3.487a.6.6 0 00.898-.52V3.033a.6.6 0 00-.898-.521L14 6m0 8H7a4 4 0 01-4-4v0a4 4 0 014-4h7M7.757 19.3L7 14h4l.677 4.74a1.98 1.98 0 01-3.92.56z" stroke="currentColor"></path> </svg>  </button>
+          <button data-tooltip-id="my-tooltip" data-tooltip-offset="0" data-tooltip-content="Hello to you too!"><svg width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="blue"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9 9c0-3.5 5.5-3.5 5.5 0 0 2.5-2.5 2-2.5 5M12 18.01l.01-.011" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+          <button data-tooltip-id="my-tooltip" data-tooltip-offset="0" data-tooltip-content="Hello to you too!"><svg width="1.5em"  height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="blue"><path d="M5 19.5V5a2 2 0 012-2h11.4a.6.6 0 01.6.6V21M9 7h6M6.5 15H19M6.5 18H19M6.5 21H19" stroke="currentColor" ></path></svg></button>
           </div>
           <div className="user-profile">
             <ProfileApp handleDropdownToggle = { handleDropdownToggleNav }/>

@@ -29,7 +29,7 @@ function App() {
               <ProfileDetails />
             </div>
           )}
-          <DocumentTypeTemplete />
+          <DocumentTypeTemplete /> 
         </div>
       </div>
     </div>
