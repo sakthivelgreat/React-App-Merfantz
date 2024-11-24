@@ -1,6 +1,7 @@
 import DocumentTypeTemplete from './DocumentTypeTemplete';
 import Navbar from './Navbar';
 import ProfileDetails from './profileDetails';
+import { Tooltip } from 'react-tooltip'
 import SideNavBar from './SideNavBar';
 import { useState } from 'react';
 import './App.css';
@@ -9,6 +10,8 @@ import './App.css';
 function App() {
   const [showContent, setShowContent] = useState(false);
 
+  const [myTooltip, setMyTooltip] = useState('tooltip-id'); 
+
   const handleDropdownToggleNav = () => {
     setShowContent(!showContent);
   };
@@ -16,7 +19,8 @@ function App() {
   return (
     <div className='Fullpage'>
         <div >
-          <Navbar handleDropdownToggleNav={handleDropdownToggleNav} />
+        <Navbar handleDropdownToggleNav={handleDropdownToggleNav} myTooltip={myTooltip} />
+        
         </div>
       
       <div className='SideNavbar' style={{ display:'grid',gridTemplateColumns:'auto 1fr'}}>
@@ -30,6 +34,7 @@ function App() {
             </div>
           )}
           <DocumentTypeTemplete /> 
+          <Tooltip  id={myTooltip} style={{ borderRadius:'8px' }}/>
         </div>
       </div>
     </div>

@@ -11,15 +11,15 @@ export const DecumentTypesCards = ({Heading , Uploaded , Review , Approved }) =>
             <div><svg width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="var(--ds-clr-black)"><path d="M12 12.5a.5.5 0 100-1 .5.5 0 000 1zM12 20.5a.5.5 0 100-1 .5.5 0 000 1zM12 4.5a.5.5 0 100-1 .5.5 0 000 1z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
           </div>
         </div>
-        <div className='seduale' style={{ display:'flex', flexDirection:'column', color:'#6A6C74',alignContent:'center',justifyContent:'center', backgroundColor:'#F7F8FD', borderRadius:'5px',padding:'5px' ,gap:'15px'}}>
+        <div  style={{ display:'flex', flexDirection:'column', color:'#6A6C74',alignContent:'center',justifyContent:'center', backgroundColor:'#F7F8FD', borderRadius:'5px',padding:'5px' ,gap:'15px'}}>
           <div style={{ display: 'flex', justifyContent:'space-between', alignItems: 'center'}}>
             <div>
-              <span>Uploaded: &nbsp;</span>
+              <span >Uploaded: &nbsp;</span>
               <span>{Uploaded}</span>
             </div>
-            <div style={{color:'#6576FC'}}>
-              <span>View documents</span>
-              <span><button><svg width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#6576FC"><path d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></span>
+            <div className='parent' style={{color:'#6576FC',display:'flex',alignItems:'center'}}>
+              <span className='child'>View documents</span>
+              <span><button style={{backgroundColor:'#F7F8FD'}}><svg style={{backgroundColor:'#F7F8FD'}} width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#6576FC"><path d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></span>
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'start', alignItems: 'center' }}>
