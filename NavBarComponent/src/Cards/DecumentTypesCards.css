@@ -1,0 +1,170 @@
+
+  
+  /* Document section */
+  .document-info {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  
+  .document-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .document-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .document-button svg {
+    vertical-align: middle;
+  }
+  span{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+  }
+  
+  /* Footer buttons */
+  .card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  
+  .card-footer div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 2px 15px;
+    cursor: pointer;
+  }
+  
+  .card-footer button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .card-footer svg {
+    color: currentColor;
+    vertical-align: middle;
+  }
+  .Card {
+    border: 1px solid rgb(78, 222, 174); 
+    position: relative;
+    display: inline-block;
+    border-radius: 8px; 
+    padding: 10px;
+    transition: border 0.4s ease, box-shadow 0.4s ease; 
+}
+
+.Card:hover {
+    border: 1.25px solid #156acb; /* Change border color on hover */
+    box-shadow: 0 16px 24px rgba(74, 144, 226, 0.3); /* Add shadow on hover */
+}
+
+.Card:hover .transitionLine::before {
+    width: 100%; /* Expand line width fully on hover */
+}
+
+.transitionLine {
+    font-weight: bold ;
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+
+
+.transitionLine::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; 
+    height: 1.25px; 
+    background-color: #4D61FC;
+    transition: width 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.MoreButton:hover{
+    background-color: #E5E8FF;
+    border-radius: 3px;
+}
+.Morebutton{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: auto !important;
+  height: 15px !important;
+  font-weight: bold;
+  
+  font-size: 11px !important;
+  color: #fff !important;  
+    
+}
+/* Statment Card css code */
+
+
+/* /* StatmentCard  css code/ */
+
+.StatmentCircle {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  background-color: #EF922E; 
+  border:1px solid #FFE5C8;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  animation: borderAnimation 3s infinite; 
+}
+@keyframes borderAnimation {
+  0%{
+    box-shadow: 0 0 0 1px #FFE5C8; 
+  }
+  
+  50%{
+    box-shadow: 0 0 0 5px #FFE5C8;
+  }
+  
+  100%{
+    box-shadow: 0 0 0 8px #FFE5C8; 
+  }
+}
+
+.Card:hover {
+  border: 1.25px solid #156acb; /* Change border color on hover */
+  box-shadow: 0 16px 24px rgba(74, 144, 226, 0.3); /* Add shadow on hover */
+}
+
+.Card:hover .StatmentTransitionLine::before {
+  width: 100%;
+}
+
+.StatmentTransitionLine {
+  font-weight: bold ;
+  position: relative;
+  display: inline-block;
+  padding: 5px 0;
+  overflow: hidden;
+}
+
+
+
+.StatmentTransitionLine::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%; 
+  height: 1.25px; 
+  background-color: #EF922E;
+  transition: width 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
