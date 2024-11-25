@@ -5,6 +5,7 @@ import { Tooltip } from 'react-tooltip'
 import SideNavBar from './SideNavBar';
 import { useState } from 'react';
 import './App.css';
+import Debitsettlement from './Cards/CardsClickTempletes/Debitsettlement';
 
 
 function App() {
@@ -38,9 +39,8 @@ function App() {
             </div>
           )}
           <div  onChange={<div><DocumentTypeTemplete/>  <Tooltip  id={myTooltip} style={{ borderRadius:'8px' }}/></div>} >
-          
           {documentTyp =='Documenttypes' && (<div><DocumentTypeTemplete/>  <Tooltip  id={myTooltip} style={{ borderRadius:'8px' }}/></div>)}
-          {documentTyp =='AllDocuments'&&( <h1>h1</h1>)}
+          {documentTyp =='AllDocuments'&&( <div><Debitsettlement/></div> )}
           {documentTyp =='AllModels'&&( <h1>h@</h1>)}
           {documentTyp =='GetStarted'&&( <h1>h3</h1>)}
           {documentTyp =='AIModelsHub'&&( <h1>h4</h1>)}
