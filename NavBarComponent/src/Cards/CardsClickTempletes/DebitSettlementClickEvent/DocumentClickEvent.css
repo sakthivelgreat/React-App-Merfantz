@@ -1,0 +1,23 @@
+.Header-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+ 
+}
+.Header-div-button button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #FFFFFF;
+    color: #4D61FC;
+}
+.Header-div-button {
+    border: 1px solid #C1C4CA;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: #FFFFFF;
+  
+}

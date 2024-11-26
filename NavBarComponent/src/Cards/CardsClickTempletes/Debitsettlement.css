@@ -1,21 +1,27 @@
 .Debit-ul-li ul li{
     display: flex;
-    justify-content:start;
+    justify-content:center;
     align-items: center;
     flex-direction: column;
     list-style-type:none;
-    padding: 10px;
-    background-color: #EDF3FF;
-    width: 100%;
-   
-   
+    padding: 5px;
+    width: 90%;
+    border-radius: 5px;
+}
+.Debit-ul-li ul li:hover{
+    background-color: #f5f8ff;
+    color: #4D61FC;
+}
+.ButtonArrow :hover{
+    background-color: ;
 }
 .Debit-ul-li{
     display: flex;
-    justify-content:start;
+    justify-content:center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    
+    width: auto;
 }
 .Debit-ul-li ul li a span{
  
@@ -25,12 +31,10 @@
     justify-content: start;
     align-items: center;
     width: 100%;
-    gap: 10px;
+   
 }
 .Debit-ul-li ul {
-    display: flex;
-    justify-content: start;
-    align-items: center;
     width: 100%;
     gap: 10px;
+    padding: 0px 0px;
 }
