@@ -1,11 +1,12 @@
-import DocumentTypeTemplete from './DocumentTypeTemplete';
+
 import Navbar from './Navbar';
 import ProfileDetails from './profileDetails';
 import { Tooltip } from 'react-tooltip'
 import SideNavBar from './SideNavBar';
 import { useState } from 'react';
 import './App.css';
-import Debitsettlement from './Cards/CardsClickTempletes/Debitsettlement';
+import DocumentTypeTemplete from './DocumentType/DocumentTypeTemplete';
+import Debitsettlement from './DocumentType/Cards/CardsClickTempletes/Debitsettlement';
 
 
 function App() {
@@ -38,7 +39,7 @@ function App() {
               <ProfileDetails />
             </div>
           )}
-          <div  onChange={<div><DocumentTypeTemplete/>  <Tooltip  id={myTooltip} style={{ borderRadius:'8px' }}/></div>} >
+          <div  onChange={<div><DocumentTypeTemplete/> <Tooltip  id={myTooltip} style={{ borderRadius:'8px' }}/></div>} >
           {documentTyp =='Documenttypes' && (<div><DocumentTypeTemplete/>  <Tooltip  id={myTooltip} style={{ borderRadius:'8px' }}/></div>)}
           {documentTyp =='AllDocuments'&&( <div><Debitsettlement/></div> )}
           {documentTyp =='AllModels'&&( <h1>h@</h1>)}

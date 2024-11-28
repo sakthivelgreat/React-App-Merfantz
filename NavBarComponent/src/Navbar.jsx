@@ -3,8 +3,8 @@ import Card from '@mui/material/Card';
 // import Tooltip from '@mui/material/Tooltip';
 // import { Tooltip } from 'react-tooltip'
 import { useState } from 'react';
-import ProfileApp from './ProfileApp';
 import ProfileDetails from './profileDetails';
+import ProfileApp from './ProfileApp';
 
 const Navbar = ({ handleDropdownToggleNav, myTooltip }) => {
   
@@ -35,8 +35,6 @@ const Navbar = ({ handleDropdownToggleNav, myTooltip }) => {
           </div>
           <div className="user-profile">
             <ProfileApp handleDropdownToggle = { handleDropdownToggleNav }/>
-           
-           
           </div>
         </div>
       </div>

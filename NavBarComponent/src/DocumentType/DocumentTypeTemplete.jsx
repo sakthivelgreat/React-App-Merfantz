@@ -1,8 +1,8 @@
 import React from 'react'
 import './documentTypeTemplete.css';
-import DecumentTypesCards from '../Cards/DecumentTypesCards';
-import StatmentCard from '../Cards/StatmentCard';
-import RentRoll from '../Cards/RentRoll';
+import StatmentCard from './Cards/StatmentCard';
+import RentRoll from './Cards/RentRoll';
+import DecumentTypesCards from './Cards/DecumentTypesCards';
 
 
 export const DocumentTypeTemplete = () => {
@@ -29,7 +29,8 @@ export const DocumentTypeTemplete = () => {
             </div>       
           </div>
           <div className='cards' style={{display:'flex',flexWrap:"wrap", gap:'20px'}}>
-            <DecumentTypesCards Heading={"Debit settlement"} Uploaded={"1"} Review={"0"} Approved={"1"} />
+            
+          <DecumentTypesCards Heading={"Debit settlement"} Uploaded={"1"} Review={"0"} Approved={"1"} />
             <RentRoll Heading={"Debit settlement"} Uploaded={"1"} Review={"0"} Approved={"1"}/>
             <DecumentTypesCards Heading={"Rent Roll"} Uploaded={"1"} Review={"0"} Approved={"1"}/>
             <DecumentTypesCards Heading={"Document 0"} Uploaded={"0"} Review={"0"} Approved={"0"}/>
