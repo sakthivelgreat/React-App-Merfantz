@@ -1,8 +1,8 @@
 import React from 'react'
 import './documentTypeTemplete.css';
-import DecumentTypesCards from './Cards/DecumentTypesCards';
-import StatmentCard from './Cards/StatmentCard';
-import RentRoll from './Cards/RentRoll';
+import DecumentTypesCards from '../Cards/DecumentTypesCards';
+import StatmentCard from '../Cards/StatmentCard';
+import RentRoll from '../Cards/RentRoll';
 
 
 export const DocumentTypeTemplete = () => {
@@ -14,10 +14,10 @@ export const DocumentTypeTemplete = () => {
             <div style={{ padding:'5px 20px'}}>
               <h1 style={{ padding: '0px 20px' ,color: 'black', fontFamily: 'system-ui' }}>Document type</h1>
             </div>
-            <div   style={{ display:'flex', justifyContent : 'center',alignItems : 'center' , gap:'20px'}}>
+            <div style={{ display:'flex', justifyContent : 'center',alignItems : 'center' , gap:'20px'}}>
               <div className='nav-search' style={{ display :'flex', justifyContent:'center',alignItems :'center'}}>
-              <svg width="1.25em" height="1.25em" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor" class="BwBqp"><path d="M17 17l4 4M3 11a8 8 0 1016 0 8 8 0 00-16 0z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-              <input className='input-search' style={{ padding : ' 2px', border:'none',outline: 'none' , fontSize: '14px',backgroundColor:'' }}  placeholder="Search document type" title="Search (Ctrl + F)" data-hj-allow="true" value=""></input>
+                <svg width="1.25em" height="1.25em" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor" class="BwBqp"><path d="M17 17l4 4M3 11a8 8 0 1016 0 8 8 0 00-16 0z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                <input className='input-search' style={{ padding : ' 2px', border:'none',outline: 'none' , fontSize: '14px',backgroundColor:'' }}  placeholder="Search document type" title="Search (Ctrl + F)" data-hj-allow="true" value=""></input>
               </div>
               <span style={{borderRight:'1px solid #D0D2D6' , height:'40px',width:'10px'}}></span>
               <button type='button' style={{ border:'none', height:'100%', display:'flex',justifyContent:'center',alignItems:'center', borderRadius:'5px', color:'white', backgroundColor:'#4D61FC' }}>

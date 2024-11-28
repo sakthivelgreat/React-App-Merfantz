@@ -1,0 +1,46 @@
+.Header-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+ 
+}
+.Header-div-button button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #FFFFFF;
+    color: #4D61FC;
+}
+.Header-div-button {
+    border: 1px solid #C1C4CA;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: #FFFFFF;
+  
+}
+.Second-Header-div{
+    gap: 5px;
+    display: flex;
+    padding: 0px 10px;
+}
+.Second-Header-div:hover{
+    background-color: #f2f4ff;
+}
+.Second-Header-div span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Second-Header-div p{
+    font-weight: 500;
+    font-size: 12px;
+    font-family: Inter,sans-serif;
+}
+.Second-Header-search-Bar:focus-within {
+    border: 1px solid #4D61FC !important;
+    transition: border 0.2s cubic-bezier(0.62, 0.15, 1, 1), box-shadow 0.2s cubic-bezier(0.62, 0.15, 1, 1);
+    box-shadow: 0 0 5px #4D61FC;
+}
