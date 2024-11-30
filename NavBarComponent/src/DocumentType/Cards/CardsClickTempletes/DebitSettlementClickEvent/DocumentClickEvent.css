@@ -44,3 +44,67 @@
     transition: border 0.2s cubic-bezier(0.62, 0.15, 1, 1), box-shadow 0.2s cubic-bezier(0.62, 0.15, 1, 1);
     box-shadow: 0 0 5px #4D61FC;
 }
+
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    appearance: none;
+    background-color: #fff; 
+    border: 2.5px solid #D0D2D6;
+    cursor: pointer;
+    position: relative;
+  }
+  .custom-checkbox:checked {
+    background-color: #4a6cf7;
+    border: 2.5px solid #4a6cf7;
+  }
+  .custom-checkbox:hover {
+    border-color: #4a6cf7;
+  }
+  .custom-checkbox:checked::after {
+    content: '';
+    position: absolute;
+    top: 0px; 
+    left: 5px; 
+    width: 5px;
+    height: 10px;
+    border: 1px solid white; 
+    border-width: 0 1px 1px 0; 
+    transform: rotate(45deg); 
+  }
+  .custom-checkbox1 {
+    visibility: hidden;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    appearance: none;
+    background-color: #fff; 
+    border: 2.5px solid #D0D2D6;
+    cursor: pointer;
+    position: relative;
+  }
+  .custom-checkbox1:checked {
+    background-color: #4a6cf7;
+    border: 2.5px solid #4a6cf7;
+  }
+  .custom-checkbox1:hover {
+    border-color: #4a6cf7;
+    visibility: visible;
+  }
+  .EnterData:hover .custom-checkbox1{
+    visibility: visible;
+
+  }
+  .custom-checkbox1:checked::after {
+    content: '';
+    position: absolute;
+    top: 0px; 
+    left: 5px; 
+    width: 5px;
+    height: 10px;
+    border: 1px solid white; 
+    border-width: 0 1px 1px 0; 
+    transform: rotate(45deg); 
+  }
+  

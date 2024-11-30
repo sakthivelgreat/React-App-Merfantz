@@ -9,9 +9,10 @@
     border-radius: 5px ;
     background-color: #FFFFFF;
 }
-.nav-search:hover{
-    border: 1.5px solid #4a90e2;
-    box-shadow: 0 4px 8px rgba(74, 144, 226, 0.3);
+.nav-search:focus-within{
+    border: 1px solid #4D61FC !important;
+    transition: border 0.2s cubic-bezier(0.62, 0.15, 1, 1), box-shadow 0.2s cubic-bezier(0.62, 0.15, 1, 1);
+    box-shadow: 0 0 5px #4D61FC;
    
 }
 .input-search::placeholder{
@@ -24,8 +25,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgb(78, 222, 174);
-
 }
 .cards{
     overflow:auto;

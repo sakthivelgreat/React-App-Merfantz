@@ -1,5 +1,6 @@
 import React from 'react'
 import './DocumentClickEvent.css';
+import { EnterData } from './EnterData';
 
 export const DocumentClickEvent = () => {
   return (
@@ -36,7 +37,7 @@ export const DocumentClickEvent = () => {
 
           </div>
         </div>
-        <div style={{ display:'flex',justifyContent:'space-between', alignItems:'center',padding:'10px', height:'auto',borderBottom:'1px solid #DDDDDD'}}>
+        <div style={{ display:'flex',justifyContent:'space-between', alignItems:'center',padding:'20px 10px', height:'auto'}}>
           <div style={{ display:'flex', borderBottom:'1px solid #D0D2D6'}}>
             <div className='Second-Header-div'>
               <span style={{ color:'#41448C'}}><svg width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M4 21.4V2.6a.6.6 0 01.6-.6h11.652a.6.6 0 01.424.176l3.148 3.148A.6.6 0 0120 5.75V21.4a.6.6 0 01-.6.6H4.6a.6.6 0 01-.6-.6z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 2v3.4a.6.6 0 00.6.6H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
@@ -64,7 +65,46 @@ export const DocumentClickEvent = () => {
             </div>
           </div>
         </div>
-        <div style={{ flex:'5',borderBottom:'1px solid #DDDDDD'}}></div>
+        <div style={{display:'grid', gridTemplateRows:'auto 1fr',flex:'5',borderBottom:'1px solid #DDDDDD'}}>
+          <div style={{display:'grid',gridTemplateColumns:'auto 1fr',padding:'10px 10px', backgroundColor:'#FAFAFA',borderBottom:'1px solid #DFE0E3'}}>
+            <div className='checkbox ' style={{display:'flex',justifyContent:'center',alignItems:'center' }} >
+              <input type="checkbox" className='custom-checkbox' />
+            </div>
+            <div style={{display:'flex',flexDirection:'row',justifyContent:'space-between',alignItems:'center',width:'100%'}}>
+              <div style={{flexBasis:'24%'}}><span style={{padding:'0px 10px',fontWeight:'500' ,fontSize:'12px',color:'#201C34',fontFamily: '"Inter", sans-serif'}}>Name</span></div>
+              <div style={{flexBasis:'15%'}}>
+                <div style={{display:'flex',flexDirection:'row',alignItems:'center'}}>
+                  <span style={{fontWeight:'500',fontSize:'12px',color:'#111827'}}>Status</span>
+                  <div><svg width="1rem" height="1rem" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#8E949E" class="d-flex align-items-center justify-content-center"><path d="M4 3h16a1 1 0 011 1v1.586a1 1 0 01-.293.707l-6.415 6.414a1 1 0 00-.292.707v6.305a1 1 0 01-1.243.97l-2-.5a1 1 0 01-.757-.97v-5.805a1 1 0 00-.293-.707L3.292 6.293A1 1 0 013 5.586V4a1 1 0 011-1z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+                </div>
+              </div>
+              <div style={{flexBasis:'15%'}}>
+                <div style={{display:'flex',flexDirection:'row',alignItems:'center',color:'#111827'}}>
+                  <span  style={{fontWeight:'500',fontSize:'12px'}}>Uploaded by</span>
+                  <div><svg width="1rem" height="1rem" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#8E949E" class="d-flex align-items-center justify-content-center"><path d="M4 3h16a1 1 0 011 1v1.586a1 1 0 01-.293.707l-6.415 6.414a1 1 0 00-.292.707v6.305a1 1 0 01-1.243.97l-2-.5a1 1 0 01-.757-.97v-5.805a1 1 0 00-.293-.707L3.292 6.293A1 1 0 013 5.586V4a1 1 0 011-1z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+                </div>
+              </div>
+              <div style={{flexBasis:'15%'}}>
+                <div style={{display:'flex',flexDirection:'row',alignItems:'center',color:'#111827'}}>
+                  <span  style={{fontWeight:'500',fontSize:'12px'}}>Date modified</span>
+                  <div><svg width="1rem" height="1rem" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#8E949E" class="d-flex align-items-center justify-content-center"><path d="M4 3h16a1 1 0 011 1v1.586a1 1 0 01-.293.707l-6.415 6.414a1 1 0 00-.292.707v6.305a1 1 0 01-1.243.97l-2-.5a1 1 0 01-.757-.97v-5.805a1 1 0 00-.293-.707L3.292 6.293A1 1 0 013 5.586V4a1 1 0 011-1z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+                  <div><svg width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#8E949E"><path d="M14 10H2M10 14H2M6 18H2M18 6H2M19 10v10m0 0l3-3m-3 3l-3-3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+                </div>
+              </div>
+              <div style={{flexBasis:'15%'}}>
+                <div style={{display:'flex',flexDirection:'row',alignItems:'center',color:'#111827'}}>
+                  <span  style={{fontWeight:'500',fontSize:'12px'}}>Date added</span>
+                  <div><svg width="1rem" height="1rem" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#8E949E" class="d-flex align-items-center justify-content-center"><path d="M4 3h16a1 1 0 011 1v1.586a1 1 0 01-.293.707l-6.415 6.414a1 1 0 00-.292.707v6.305a1 1 0 01-1.243.97l-2-.5a1 1 0 01-.757-.97v-5.805a1 1 0 00-.293-.707L3.292 6.293A1 1 0 013 5.586V4a1 1 0 011-1z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+                  <div><svg width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#8E949E"><path d="M14 10H2M10 14H2M6 18H2M18 6H2M19 10v10m0 0l3-3m-3 3l-3-3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div>
+            <EnterData/>
+          </div>
+        </div>
         <div style={{ flex:'1',borderBottom:'1px solid #DDDDDD'}}></div >
       </div>
     </div>
