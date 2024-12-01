@@ -7,6 +7,9 @@ import { useState } from 'react';
 import './App.css';
 import DocumentTypeTemplete from './DocumentType/DocumentTypeTemplete';
 import Debitsettlement from './DocumentType/Cards/CardsClickTempletes/Debitsettlement';
+import { AllDocumentTemplete } from './2.AllDocument/AllDocumentTemplete';
+import { AllModels } from './3.AllModels/AllModels';
+import { SettingsTemplete } from './5.Settings/SettingsTemplete';
 
 
 function App() {
@@ -41,11 +44,11 @@ function App() {
           )}
           <div  onChange={<div><DocumentTypeTemplete/> <Tooltip  id={myTooltip} style={{ borderRadius:'8px' }}/></div>} >
           {documentTyp =='Documenttypes' && (<div><DocumentTypeTemplete/>  <Tooltip  id={myTooltip} style={{ borderRadius:'8px' }}/></div>)}
-          {documentTyp =='AllDocuments'&&( <div><Debitsettlement/></div> )}
-          {documentTyp =='AllModels'&&( <h1>h@</h1>)}
+          {documentTyp =='AllDocuments'&&( <div><AllDocumentTemplete/></div> )}
+          {documentTyp =='AllModels'&&(<AllModels/>)}
           {documentTyp =='GetStarted'&&( <h1>h3</h1>)}
           {documentTyp =='AIModelsHub'&&( <h1>h4</h1>)}
-          {documentTyp =='Settings'&&( <h1>h5</h1>)}
+          {documentTyp =='Settings'&&(<SettingsTemplete/>)}
           </div>
         </div>
       </div>

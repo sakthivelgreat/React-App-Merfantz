@@ -65,7 +65,7 @@ export const DocumentClickEvent = () => {
             </div>
           </div>
         </div>
-        <div style={{display:'grid', gridTemplateRows:'auto 1fr',flex:'5',borderBottom:'1px solid #DDDDDD'}}>
+        <div style={{display:'grid', gridTemplateRows:'auto 1fr',flex:'5'}}>
           <div style={{display:'grid',gridTemplateColumns:'auto 1fr',padding:'10px 10px', backgroundColor:'#FAFAFA',borderBottom:'1px solid #DFE0E3'}}>
             <div className='checkbox ' style={{display:'flex',justifyContent:'center',alignItems:'center' }} >
               <input type="checkbox" className='custom-checkbox' />
@@ -102,10 +102,20 @@ export const DocumentClickEvent = () => {
             </div>
           </div>
           <div>
-            <EnterData/>
+         <EnterData pdfName='sample_debit_collection_ndr.pdf' Status='Processed' uploadedBy=' docSumo salesforce' modifiedDate='10 Sep 2024'  modifiedTime='8:11 PM' addedDate ='5 May 2022' addedTime= '2:21 PM'/>
+          <EnterData pdfName='sample_debit_collection_ndr.pdf' Status='Processed' uploadedBy=' docSumo salesforce' modifiedDate='10 Sep 2024'  modifiedTime='8:11 PM' addedDate ='5 May 2022' addedTime= '2:21 PM'/>
+          <EnterData pdfName='sample_debit_collection_ndr.pdf' Status='Processed' uploadedBy=' docSumo salesforce' modifiedDate='10 Sep 2024'  modifiedTime='8:11 PM' addedDate ='5 May 2022' addedTime= '2:21 PM'/>
+          <EnterData pdfName='sample_debit_collection_ndr.pdf' Status='Processed' uploadedBy=' docSumo salesforce' modifiedDate='10 Sep 2024'  modifiedTime='8:11 PM' addedDate ='5 May 2022' addedTime= '2:21 PM'/>
+         
           </div>
         </div>
-        <div style={{ flex:'1',borderBottom:'1px solid #DDDDDD'}}></div >
+        <div style={{ flex:'5%',display:'flex',alignItems:'flex-start',justifyContent:'center'}}>
+          <div style={{display:'flex',justifyContent:'center',alignItems:'center',gap:'10px'}}>
+            <button style={{all:'unset'}}><span><svg  style={{fontWeight:'500',fontSize:'16px'}} width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#6B7280"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></button>
+            <button style={{all:'unset',height:'30px',width:'30px',backgroundColor:'#F2F4FF',borderRadius:'8px',border:'1px solid #4D61FC',textAlign:'center'}}><span style={{fontWeight:'500',fontSize:'16px'}}>1</span></button>
+            <button style={{all:'unset'}}><svg width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#6B7280"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+          </div>
+        </div >
       </div>
     </div>
   )
